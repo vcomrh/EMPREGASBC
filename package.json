@@ -11,23 +11,27 @@
     "bot": "tsx bot/index.ts"
   },
   "dependencies": {
+    "@nuxt/ui": "^2.21.0",
+    "@nuxtjs/supabase": "^1.4.6",
+    "@supabase/supabase-js": "^2.116.0",
+    "@vueuse/core": "^13.1.0",
+    "@vueuse/nuxt": "^13.1.0",
+    "dayjs": "^1.11.13",
     "nuxt": "^3.21.11",
     "vue": "^3.5.42",
     "vue-router": "^5.3.1",
-    "@nuxtjs/supabase": "^1.4.6",
-    "@supabase/supabase-js": "^2.49.4",
-    "@nuxt/ui": "^2.21.0",
-    "@vueuse/nuxt": "^13.1.0",
-    "@vueuse/core": "^13.1.0",
     "vuedraggable": "^4.1.0",
-    "zod": "^3.25.28",
-    "dayjs": "^1.11.13"
+    "zod": "^3.25.28"
   },
   "devDependencies": {
     "@nuxt/devtools": "^2.4.0",
     "@nuxt/eslint": "^1.4.1",
     "@types/node": "^22.15.21",
-    "typescript": "^5.8.3",
-    "tsx": "^4.19.4"
+    "tsx": "^4.19.4",
+    "typescript": "^5.8.3"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "unrs-resolver@1.12.2": true
   }
 }
