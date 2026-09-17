@@ -13,5 +13,11 @@ export const useAuth = () => {
     await navigateTo('/auth/login')
   }
 
-  return { user, login, logout }
+  const registrar = async (email: string, password: string) => {
+    const { data, error } = await supabase.auth.signUp({ email, password })
+    if (error) throw error
+    return data
+  }
+
+  return { user, login, logout, registrar }
 }
